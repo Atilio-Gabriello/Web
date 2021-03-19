@@ -3,9 +3,21 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
-/*Box Model*/
+/*Pagina principal*/
 
-header{
+#page-home{
+    height: 100vh;
+    background: url('../resources/home-background.svg') no-repeat;
+    background-position: 35vw bottom;
+}
+
+#page-home .content{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+#page-home header{
     display: flex;
     align-items: center;
     justify-content: space-between ;
