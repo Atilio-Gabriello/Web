@@ -1,6 +1,6 @@
 @media (max-width: 900px){
     #page-home{
-        background-position-x: 70vh;
+        background-position-x: 70vw;
     }
 
     #page-home .content{
@@ -17,5 +17,17 @@
 
     #page-home main{
         align-items: center;
+    }
+}
+
+@media (min-width: 1700px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (min-width: 760px){
+    #page-home{
+        background-position-y: 200px;
     }
 }
