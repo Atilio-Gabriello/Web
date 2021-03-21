@@ -135,6 +135,12 @@ form button:hover{
 }
 
 .items-grid li.selected{
-    background-color: #99f5c1;
-    border: var(--primary-color);
+    background-color: #7be7ae;
+    border: 2px solid;
+    border-color: var(--primary-color);
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
 }

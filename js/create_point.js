@@ -45,5 +45,8 @@ for(const item of itemsCollect){
 }
 
 function handleSelectedItem(event){
-    
+    const itemLi = event.target
+
+    itemLi.classList.toggle()
+    const itemId = itemLi.dataset.id
 }
