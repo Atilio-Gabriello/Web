@@ -4,6 +4,14 @@ const server = express()
 //Configurar pasta publica
 server.use(express.static("public"))
 
+//Template engine
+
+const nunjucks = require("nunjucks")
+nunjucks.configure("src/views",{
+    express: server,
+    noCache: true
+})
+
 server.get("/", (req,res) => {
     res.sendFile(__dirname + "/views/index.html")
 })
