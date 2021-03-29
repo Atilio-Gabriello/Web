@@ -20,8 +20,8 @@ db.serialize(() => {
 
     const query = `
         INSERT INTO places (
-            name,
             image,
+            name,
             address,
             address2,
             state,
@@ -61,7 +61,7 @@ db.serialize(() => {
     })
 
     //FUNÇÃO PARA DELETAR REGISTROS
-    /*db.run(`DELETE FROM places WHERE id = ?`, [1], function(err){
+    db.run(`DELETE FROM places WHERE id = ?`, [], function(err){
         if(err){
             return console.log(err)
         }
