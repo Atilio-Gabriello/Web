@@ -49,7 +49,7 @@ db.serialize(() => {
         console.log(this)
     }
 
-    db.run(query, values, afterInsertData)
+    //db.run(query, values, afterInsertData)
 
     db.all(`SELECT * FROM places`, function(err, rows){
         if(err){
@@ -61,7 +61,7 @@ db.serialize(() => {
     })
 
     //FUNÇÃO PARA DELETAR REGISTROS
-    db.run(`DELETE FROM places WHERE id = ?`, [], function(err){
+    db.run(`DELETE FROM places WHERE id = ?`, [18], function(err){
         if(err){
             return console.log(err)
         }

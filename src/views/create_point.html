@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/create_point.css">
+    <link rel="stylesheet" href="style/modal.css">
     <link rel="stylesheet" href="style/responsive.css">
     <title>Criar um ponto de coleta</title>
 </head>
@@ -20,7 +21,7 @@
 
         {% include "partials/page-header.html" %}
 
-        <form action="">
+        <form action="/savepoint" method="POST">
             <h1>Cadastro do ponto de coleta</h1>
             <fieldset>
                 <legend>
@@ -105,7 +106,13 @@
 
             <button type="submit">Cadastrar ponto de coleta</button>
         </form>
+
+        
     </div>
+
+    {% if saved %}
+        {% include "partials/point-created.html" %}
+    {% endif %}
 
     <script src="js/create_point.js"></script>
 </body>
