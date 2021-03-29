@@ -2,6 +2,8 @@ const express = require("express")
 const nunjucks = require("nunjucks")
 const server = express()
 
+const db = require("./database/db")
+
 //Configurar pasta publica
 server.use(express.static("public"))
 
