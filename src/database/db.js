@@ -61,7 +61,7 @@ db.serialize(() => {
     })
 
     //FUNÇÃO PARA DELETAR REGISTROS
-    db.run(`DELETE FROM places WHERE id = ?`, [18], function(err){
+    db.run(`DELETE FROM places WHERE id = ?`, [25], function(err){
         if(err){
             return console.log(err)
         }
